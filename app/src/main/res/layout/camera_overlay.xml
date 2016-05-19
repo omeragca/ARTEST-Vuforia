@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_overlay_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:id="@+id/lnX1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/bX1Neg"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/round_button"
+            android:onClick="bX1NegClicked"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/bX1Plus"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_button"
+            android:onClick="bX1PlusClicked"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnY2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/bY2Plus"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/round_button"
+            android:onClick="bY2PlusClicked"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/bY2Neg"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/round_button"
+            android:onClick="bY2NegClicked"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/bX2Plus"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/round_button"
+            android:onClick="bX2PlusClicked"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/bX2Neg"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_button"
+            android:onClick="bX2NegClicked"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnY1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/my_layout"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/bY1Neg"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/round_button"
+            android:onClick="bY1NegClicked"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/bY1Plus"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/round_button"
+            android:onClick="bY1PlusClicked"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        style="@android:style/Widget.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <HorizontalScrollView
+        android:id="@+id/my_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible">
+
+        <RadioGroup
+            android:id="@+id/rGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--
+            <RadioButton
+                android:id="@+id/rbImg1"
+                style="@android:style/Widget.CompoundButton.CheckBox"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/mavi"
+                android:checked="true" />
+                -->
+
+        </RadioGroup>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>
